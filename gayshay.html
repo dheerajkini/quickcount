@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple HTML Form</title>
+  </head>
+
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <!-- <form> tag defines a form section -->
+    <form action="/submit" method="post">
+      <!--
+        action = where the form data will be sent (URL or script)
+        method = how data is sent ("get" or "post")
+      -->
+
+      <!-- Text input field -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" required>
+      <!--
+        <label> describes the input field.
+        for="id" links label with input.
+        type="text" creates a single-line text box.
+        required = makes the field mandatory.
+      -->
+      <br><br>
+
+      <!-- Email input field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <!-- 
+        type="email" ensures valid email format.
+      -->
+      <br><br>
+
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <!-- 
+        type="password" hides the typed characters.
+      -->
+      <br><br>
+
+      <!-- Radio buttons for gender -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <!--
+        Radio buttons share same name so only one can be selected.
+      -->
+      <br><br>
+
+      <!-- Submit button -->
+      <input type="submit" value="Register">
+      <!-- 
+        Submits the form to the URL in 'action'.
+      -->
+    </form>
+
+    <!--
+      Summary of tags:
+      <form>      → form container
+      <label>     → text label for input
+      <input>     → user input field
+      type="text" → text box
+      type="email"→ email validation
+      type="password"→ hides text
+      type="radio"→ select one from many
+      type="submit"→ submit button
+    -->
+  </body>
+</html>
